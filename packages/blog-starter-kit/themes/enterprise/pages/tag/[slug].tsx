@@ -72,6 +72,7 @@ export async function getStaticProps({ params }: Params) {
 			posts,
 			publication,
 			tag: params.slug,
+			isDarkTheme: !!publication.preferences.darkMode?.enabled,
 		},
 		revalidate: 1,
 	};

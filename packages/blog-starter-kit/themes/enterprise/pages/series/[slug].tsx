@@ -110,6 +110,7 @@ export const getStaticProps: GetStaticProps<Props, Params> = async ({ params }) 
 			series,
 			posts,
 			publication,
+			isDarkTheme: !!publication.preferences.darkMode?.enabled,
 		},
 		revalidate: 1,
 	};
