@@ -25,7 +25,7 @@ export const Footer = () => {
 					</p>
 				)}
 				<div className="grid w-full grid-cols-3 gap-5 md:grid-cols-6 lg:grid-cols-5">					
-					<div className="col-span-2 flex flex-col items-end gap-5 text-right text-slate-600 dark:text-neutral-300 md:text-left">
+					<div className="col-span-2 flex flex-col items-center gap-5 text-center text-slate-600 dark:text-neutral-300 md:text-center">
 						<SocialLinks />
 						<p>&copy; 2026 Stephen J. Lu</p>
 						<p>
@@ -35,6 +35,10 @@ export const Footer = () => {
 							·{' '}
 							<a href="https://hashnode.com/terms" className="hover:underline">
 								Terms
+							</a>{' '}
+							·{' '}
+							<a href="https://hashnode.com/code-of-conduct" className="hover:underline">
+								Code of Conduct
 							</a>
 						</p>
 					</div>
