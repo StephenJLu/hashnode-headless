@@ -24,8 +24,8 @@ export const Footer = () => {
 						{publication.title}
 					</p>
 				)}
-				<div className="grid w-full grid-cols-3 gap-5 md:grid-cols-6 lg:grid-cols-5">					
-					<div className="col-span-2 flex flex-col items-center gap-5 text-center text-slate-600 dark:text-neutral-300 md:text-center">
+				<div className="flex w-full flex-col items-center gap-5">					
+					<div className="flex flex-col items-center gap-5 text-center text-slate-600 dark:text-neutral-300">
 						<SocialLinks />
 						<p>&copy; 2026 Stephen J. Lu</p>
 						<p>
