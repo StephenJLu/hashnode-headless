@@ -994,19 +994,19 @@ const { default: isURL } = require('validator/lib/isURL');
 	};
 
 	Renderer.prototype.image = function (href, title, text, alignment = ImageAlignment.Left) {
-		let alignmentStyles = '';
+		let alignmentStyles = 'rounded-xl';
 		switch (alignment) {
 			case ImageAlignment.Left:
-				alignmentStyles = '';
+				alignmentStyles += '';
 				break;
 			case ImageAlignment.Center:
-				alignmentStyles = 'image--center mx-auto';
+				alignmentStyles += ' image--center mx-auto';
 				break;
 			case ImageAlignment.Right:
-				alignmentStyles = 'image--right mx-auto mr-0';
+				alignmentStyles += ' image--right mx-auto mr-0';
 				break;
 			default:
-				alignmentStyles = '';
+				alignmentStyles += '';
 		}
 		let out = `<img src="${href}" alt="${text}" class="${alignmentStyles}"`;
 		if (title) {
