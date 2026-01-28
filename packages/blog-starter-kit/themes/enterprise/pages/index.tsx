@@ -121,14 +121,14 @@ export default function Index({ publication, initialAllPosts, initialPageInfo }:
 					/>
 				</Head>
 				<Header />
-				<Container className="flex flex-col items-stretch gap-10 px-5 pb-10">
+				<Container className="flex flex-col items-stretch gap-10 px-5 pb-10 dark:bg-neutral-900">
 					<Navbar />
 
 					{allPosts.length === 0 && (
 						<div className="grid grid-cols-1 py-20 lg:grid-cols-3">
 							<div className="col-span-1 flex flex-col items-center gap-5 text-center text-slate-700 dark:text-neutral-400 lg:col-start-2">
 								<div className="w-20">
-									<ArticleSVG clasName="stroke-current" />
+									<ArticleSVG className="stroke-current" />
 								</div>
 								<p className="text-xl font-semibold ">
 									Hang tight! We&apos;re drafting the first article.
