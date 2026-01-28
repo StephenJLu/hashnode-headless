@@ -4,9 +4,7 @@ import { useAppContext } from './contexts/appContext';
 import { PublicationFragment } from '../generated/graphql';
 
 const getPublicationLogo = (publication: PublicationFragment, isSidebar?: boolean) => {
-	if (isSidebar) {
-		return publication.preferences.logo; // Always display light mode logo in sidebar
-	}
+	
 	return publication.preferences.darkMode?.logo || publication.preferences.logo;
 }
 
