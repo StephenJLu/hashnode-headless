@@ -10,7 +10,7 @@ export const SocialLinks = ({ isSidebar }: { isSidebar?: boolean }) => {
 	return (
 		<>
 			<div
-				className={`col-span-1 flex flex-row flex-wrap gap-1 text-slate-600 dark:text-neutral-300 md:flex-nowrap ${
+				className={`col-span-1 flex flex-row flex-wrap gap-1 text-slate-600 md:flex-nowrap dark:text-neutral-300 ${
 					isSidebar ? 'justify-start' : 'justify-end'
 				}`}
 			>

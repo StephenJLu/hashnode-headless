@@ -20,11 +20,11 @@ export const Footer = () => {
 						</Link>
 					</div>
 				) : (
-					<p className="mb-20 text-center text-xl font-semibold text-slate-900 dark:text-slate-50 md:text-4xl">
+					<p className="mb-20 text-center text-xl font-semibold text-slate-900 md:text-4xl dark:text-slate-50">
 						{publication.title}
 					</p>
 				)}
-				<div className="flex w-full flex-col items-center gap-5">					
+				<div className="flex w-full flex-col items-center gap-5">
 					<div className="flex flex-col items-center gap-5 text-center text-slate-600 dark:text-neutral-300">
 						<SocialLinks />
 						<p>&copy; {new Date().getFullYear()} Stephen J. Lu</p>
