@@ -5,7 +5,7 @@ import { SocialLinks } from './social-links';
 
 export const Footer = () => {
 	const { publication } = useAppContext();
-	const PUBLICATION_LOGO = publication.preferences.logo;
+	const PUBLICATION_LOGO = publication.preferences.darkMode?.logo || publication.preferences.logo;
 	return (
 		<footer className="border-t py-20 dark:border-neutral-800 ">
 			<Container className="px-5">
