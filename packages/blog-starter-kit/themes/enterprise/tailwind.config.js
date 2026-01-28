@@ -12,7 +12,7 @@ module.exports = {
 				'accent-7': '#333',
 				success: '#0070f3',
 				cyan: '#79FFE1',
-				primary: 'oklch(89.7% 0.14 83.6)',
+				primary: '#FFD466',
 			},
 			typography: () => ({
 				DEFAULT: {
