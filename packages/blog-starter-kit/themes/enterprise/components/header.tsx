@@ -98,8 +98,7 @@ export const Header = () => {
 					</div>
 				</div>
 				<div className="col-span-2 flex flex-row items-center justify-end gap-5 text-slate-300 lg:col-span-3">
-					<nav className="hidden lg:block">{navList}</nav>
-					<Button href="https://www.StephenJLu.com" as="a" type="primary" label="Back to StephenJLu.com" />
+					<nav className="hidden lg:block">{navList}</nav>					
 				</div>
 			</Container>
 			<div className="mt-5 flex justify-center lg:hidden">
