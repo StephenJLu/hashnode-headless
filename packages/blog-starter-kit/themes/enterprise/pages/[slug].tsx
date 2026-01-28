@@ -201,7 +201,6 @@ export const getStaticProps: GetStaticProps<Props, Params> = async ({ params }) 
 				type: 'post',
 				post: postData.publication.post,
 				publication: postData.publication,
-				isDarkTheme: !!postData.publication.preferences.darkMode?.enabled,
 			},
 			revalidate: 1,
 		};
@@ -215,7 +214,6 @@ export const getStaticProps: GetStaticProps<Props, Params> = async ({ params }) 
 				type: 'page',
 				page: pageData.publication.staticPage,
 				publication: pageData.publication,
-				isDarkTheme: !!pageData.publication.preferences.darkMode?.enabled,
 			},
 			revalidate: 1,
 		};

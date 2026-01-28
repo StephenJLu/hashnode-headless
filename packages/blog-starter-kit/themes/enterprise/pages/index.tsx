@@ -206,14 +206,11 @@ export const getStaticProps: GetStaticProps<Props> = async () => {
 	}
 	const initialAllPosts = publication.posts.edges.map((edge) => edge.node);
 
-	const isDarkTheme = !!publication.preferences.darkMode?.enabled;
-
 	return {
 		props: {
 			publication,
 			initialAllPosts,
 			initialPageInfo: publication.posts.pageInfo,
-			isDarkTheme,
 		},
 		revalidate: 1,
 	};
