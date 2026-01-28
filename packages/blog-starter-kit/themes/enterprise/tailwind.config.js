@@ -12,7 +12,19 @@ module.exports = {
 				'accent-7': '#333',
 				success: '#0070f3',
 				cyan: '#79FFE1',
-				primary: '#FFD466',
+				primary: {
+					DEFAULT: '#FFD466',
+					50: '#FFFBEA',
+					100: '#FFF8D5',
+					200: '#FFF0AB',
+					300: '#FFE881',
+					400: '#FFE457',
+					500: '#FFD466',
+					600: '#E6B800',
+					700: '#B88A00',
+					800: '#8A6600',
+					900: '#5C4400',
+				},
 			},
 			typography: () => ({
 				DEFAULT: {
