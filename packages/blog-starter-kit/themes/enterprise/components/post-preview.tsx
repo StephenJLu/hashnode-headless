@@ -30,7 +30,7 @@ export const PostPreview = ({ title, subtitle, coverImage, date, excerpt, slug }
 				/>
 			</div>
 			<div className="col-span-1 flex flex-col gap-2">
-				<h1 className="text-lg font-semibold leading-tight text-slate-800 dark:text-neutral-50">
+				<h1 className="text-xl font-semibold leading-tight text-slate-800 dark:text-neutral-50">
 					<Link
 						href={postURL}
 						className="hover:text-primary-600 dark:hover:text-primary-500 hover:underline"
@@ -40,7 +40,7 @@ export const PostPreview = ({ title, subtitle, coverImage, date, excerpt, slug }
 				</h1>
 				{subtitle && (
 					<Link href={postURL}>
-						<h3 className="text-slate-600 dark:text-neutral-300">
+						<h3 className="text-lg text-slate-600 dark:text-neutral-300">
 							{subtitle}
 						</h3>
 					</Link>

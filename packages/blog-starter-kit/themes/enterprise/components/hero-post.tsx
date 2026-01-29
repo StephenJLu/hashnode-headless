@@ -37,7 +37,7 @@ export const HeroPost = ({ title, subtitle, coverImage, date, excerpt, slug }: P
 				</h1>
 				{subtitle && (
 					<Link href={postURL}>
-						<h3 className="text-slate-600 dark:text-neutral-300">
+						<h3 className="text-lg text-slate-600 dark:text-neutral-300">
 							{subtitle}
 						</h3>
 					</Link>
