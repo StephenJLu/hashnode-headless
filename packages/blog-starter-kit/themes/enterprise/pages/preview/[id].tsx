@@ -57,6 +57,7 @@ export default function Post({ publication, post }: Props) {
 						</Head>
 						<PostHeader
 							title={post.title}
+							subtitle={post.subtitle}
 							coverImage={post.coverImage?.url}
 							date={new Date().toISOString()}
 							author={post.author}
