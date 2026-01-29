@@ -9,6 +9,7 @@ type Author = Pick<User, 'name' | 'profilePicture'>;
 
 type Props = {
 	title: string;
+	subtitle: string | null | undefined;
 	coverImage: string | null | undefined;
 	date: string;
 	excerpt: string;
@@ -16,7 +17,7 @@ type Props = {
 	slug: string;
 };
 
-export const PostPreview = ({ title, coverImage, date, excerpt, slug }: Props) => {
+export const PostPreview = ({ title, subtitle,coverImage, date, excerpt, slug }: Props) => {
 	const postURL = `/${slug}`;
 
 	return (
@@ -37,6 +38,13 @@ export const PostPreview = ({ title, coverImage, date, excerpt, slug }: Props) =
 						{title}
 					</Link>
 				</h1>
+				{subtitle && (
+					<Link href={postURL}>
+						<p className="text-base leading-snug text-slate-600 dark:text-neutral-400">
+							{subtitle}
+						</p>
+					</Link>
+				)}
 				<Link href={postURL}>
 					<p className="text-md leading-snug text-slate-500 dark:text-neutral-400">
 						{excerpt.length > 140 ? excerpt.substring(0, 140) + '…' : excerpt}
