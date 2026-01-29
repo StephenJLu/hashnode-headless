@@ -128,6 +128,7 @@ const Post = ({ publication, post }: PostProps) => {
 			</Head>
 			<PostHeader
 				title={post.title}
+				subtitle={post.subtitle}
 				coverImage={post.coverImage?.url}
 				date={post.publishedAt}
 				author={post.author}
