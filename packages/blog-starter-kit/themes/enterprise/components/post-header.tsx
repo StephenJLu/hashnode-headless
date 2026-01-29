@@ -6,22 +6,25 @@ import { DateFormatter } from './date-formatter';
 import CoAuthorsModal from './co-authors-modal';
 import { ReadTimeInMinutes } from './post-read-time-in-minutes';
 import { PostTitle } from './post-title';
+import { PostSubtitle } from './post-subtitle';
 import { useAppContext } from './contexts/appContext';
 import { twJoin } from 'tailwind-merge';
 import { useState } from 'react';
 import ProfileImage from './profile-image';
+import Post from '../pages/series/[slug]';
 
 type Author = Pick<User, 'username' | 'name' | 'profilePicture'>;
 
 type Props = {
 	title: string;
+	subtitle: string | null | undefined;
 	coverImage: string | null | undefined;
 	date: string;
 	author: Author;
 	readTimeInMinutes: number;
 };
 
-export const PostHeader = ({ title, coverImage, date, author, readTimeInMinutes }: Props) => {
+export const PostHeader = ({ title, subtitle, coverImage, date, author, readTimeInMinutes }: Props) => {
 	const { post: _post } = useAppContext();
   	const post = _post as unknown as PostFullFragment;
 	const authorsArray = [post.author, ...(post.coAuthors || [])];
@@ -35,6 +38,7 @@ export const PostHeader = ({ title, coverImage, date, author, readTimeInMinutes 
 	return (
 		<>
 			<PostTitle>{title}</PostTitle>
+			<PostSubtitle>{subtitle}</PostSubtitle>
 			<div className="flex flex-row flex-wrap items-center justify-center w-full gap-2 px-2 text-slate-700 dark:text-neutral-300 md:px-0">
 				<div className="mb-5 flex w-full flex-row items-center justify-center md:mb-0 md:w-auto md:justify-start">
 					{authorsArray.map((coAuthor, index) => (
