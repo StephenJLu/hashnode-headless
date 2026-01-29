@@ -72,6 +72,7 @@ export default function Index({ publication, initialAllPosts, initialPageInfo }:
 			<SecondaryPost
 				key={post.id}
 				title={post.title}
+				subtitle={post.subtitle}
 				coverImage={post.coverImage?.url || DEFAULT_COVER}
 				date={post.publishedAt}
 				slug={post.slug}
@@ -142,6 +143,7 @@ export default function Index({ publication, initialAllPosts, initialPageInfo }:
 							{firstPost && (
 								<HeroPost
 									title={firstPost.title}
+									subtitle={firstPost.subtitle}
 									coverImage={firstPost.coverImage?.url || DEFAULT_COVER}
 									date={firstPost.publishedAt}
 									slug={firstPost.slug}
