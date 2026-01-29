@@ -28,6 +28,7 @@ export const Footer = () => {
 					<div className="flex flex-col items-center gap-5 text-center text-slate-600 dark:text-neutral-300">
 						<SocialLinks />
 						<p>&copy; {new Date().getFullYear()} Stephen J. Lu</p>
+						<p>Powered by <a href="https://hashnode.com" className="hover:underline">Hashnode</a></p>
 						<p>
 							<a href="https://hashnode.com/privacy" className="hover:underline">
 								Privacy Policy
