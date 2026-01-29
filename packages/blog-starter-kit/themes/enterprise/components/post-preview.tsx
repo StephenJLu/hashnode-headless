@@ -37,14 +37,12 @@ export const PostPreview = ({ title, subtitle,coverImage, date, excerpt, slug }:
 					>
 						{title}
 					</Link>
-				</h1>
-				{subtitle && (
+				</h1>				
 					<Link href={postURL}>
 						<p className="text-base leading-snug text-slate-600 dark:text-neutral-400">
 							{subtitle}
 						</p>
-					</Link>
-				)}
+					</Link>				
 				<Link href={postURL}>
 					<p className="text-md leading-snug text-slate-500 dark:text-neutral-400">
 						{excerpt.length > 140 ? excerpt.substring(0, 140) + '…' : excerpt}

@@ -6,13 +6,14 @@ import { DateFormatter } from './date-formatter';
 
 type Props = {
 	title: string;
+	subtitle: string | null | undefined;
 	coverImage: string;
 	date: string;
 	excerpt: string;
 	slug: string;
 };
 
-export const SecondaryPost = ({ title, coverImage, date, excerpt, slug }: Props) => {
+export const SecondaryPost = ({ title, subtitle, coverImage, date, excerpt, slug }: Props) => {
 	const postURL = `/${slug}`;
 
 	return (
@@ -33,6 +34,11 @@ export const SecondaryPost = ({ title, coverImage, date, excerpt, slug }: Props)
 						{title}
 					</Link>
 				</h1>
+				<Link href={postURL}>
+						<p className="text-base leading-snug text-slate-600 dark:text-neutral-400">
+							{subtitle}
+						</p>
+					</Link>		
 				<Link href={postURL}>
 					<p className="text-md leading-snug text-slate-500 dark:text-neutral-400">
 						{excerpt.length > 100 ? excerpt.substring(0, 100) + '…' : excerpt}
