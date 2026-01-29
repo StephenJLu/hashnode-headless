@@ -35,11 +35,13 @@ export const HeroPost = ({ title, subtitle, coverImage, date, excerpt, slug }: P
 						{title}
 					</Link>
 				</h1>
-				<Link href={postURL}>
+				{subtitle && (
+					<Link href={postURL}>
 						<p className="text-base leading-snug text-slate-600 dark:text-neutral-400">
 							{subtitle}
 						</p>
-					</Link>		
+					</Link>
+				)}
 				<Link href={postURL}>
 					<p className="text-md leading-snug text-slate-500 dark:text-neutral-400">{excerpt}</p>
 				</Link>
