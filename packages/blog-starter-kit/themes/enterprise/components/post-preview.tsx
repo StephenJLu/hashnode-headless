@@ -40,9 +40,9 @@ export const PostPreview = ({ title, subtitle, coverImage, date, excerpt, slug }
 				</h1>
 				{subtitle && (
 					<Link href={postURL}>
-						<p className="text-base leading-snug text-slate-600 dark:text-neutral-400">
+						<h3 className="text-slate-600 dark:text-neutral-300">
 							{subtitle}
-						</p>
+						</h3>
 					</Link>
 				)}
 				<Link href={postURL}>
