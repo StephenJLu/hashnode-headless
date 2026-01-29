@@ -19,6 +19,7 @@ export const MorePosts = ({ posts, context }: Props) => {
 					<PostPreview
 						key={post.slug}
 						title={post.title}
+						subtitle={post.subtitle}
 						coverImage={post.coverImage?.url}
 						date={post.publishedAt}
 						author={{
